@@ -19,7 +19,7 @@ android {
             useSupportLibrary = true
         }
     }
-
+//Jajajajajajajajajaja
     buildTypes {
         release {
             isMinifyEnabled = false
