@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting() {
     rawJSON()
-    Text(text = "responseText")
+    Text(text = "responseText2")
 }
 
 //https://places.googleapis.com/v1/places:searchText

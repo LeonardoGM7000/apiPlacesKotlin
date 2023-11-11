@@ -1,6 +1,7 @@
 package com.example.api2.ui.theme
 
 import android.util.Log
+import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import kotlinx.coroutines.CoroutineScope
@@ -61,6 +62,9 @@ fun rawJSON() {
 
                 Log.d("Pretty Printed JSON :", prettyJson)
 
+                val gson1 = Gson()
+                var mUser = gson1.fromJson(prettyJson, PlacesClass::class.java)
+                Log.d("Clase exitosa",mUser.places[0].formattedAddress)
             } else {
 
                 Log.e("RETROFIT_ERROR", response.code().toString())
